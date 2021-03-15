@@ -24,3 +24,6 @@
 - ```ssh user@X.tcp.ngrok.io -p XXXXX```
 - ```screen```
 - If the ssh connection drops, restart it and use ```screen -dr``` to pick up where you left off
+
+### Reference material
+- SSH https://www.youtube.com/watch?v=n9QBoXKot40&t=174s
