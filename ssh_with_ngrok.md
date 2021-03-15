@@ -18,7 +18,8 @@
 ### Open tcp connection with ngrok on remote computer
 - ```/opt/ngrok tcp --remote-addr=X.tcp.ngrok.io:XXXXX 22```
   - Replace X's with your ngrok static remote address
-- Alternatively, set up a bash script to run this command for you
+- Alternatively, set up a service to keep this running for you
+  - more info here https://jarifibrahim.github.io/blog/ssh-using-tailscale-or-ngrok/
 
 ### SSH from personal computer
 - ```ssh user@X.tcp.ngrok.io -p XXXXX```
