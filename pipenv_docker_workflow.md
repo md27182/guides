@@ -2,7 +2,7 @@
 ### Update Pipfile.lock
 Clear out the .venv folder and run
 ```
-sudo docker run --log-driver none -it --rm -v /home/lightbox/Desktop/lbx-nerf:/tmp -w /tmp lbx-nerf:latest pipenv lock
+sudo docker run --log-driver none -it --rm -v /home/lightbox/Desktop/lbx-nerf:/bind -w /bind lbx-nerf:latest pipenv lock
 ```
 
 Note: it's important to update the lock file from inside the docker environment to avoid, for example, building dependencies based on your local python version instead of the one in the docker environment. 
@@ -25,5 +25,5 @@ RUN pipenv install --system
 
 ### Run the code
 ```
-sudo docker run --gpus all -it --rm -v /home/lightbox/Desktop/lbx-nerf:/tmp -w /tmp lbx-nerf:latest python run_nerf.py --config config_train.txt
+sudo docker run --gpus all -it --rm -v /home/lightbox/Desktop/lbx-nerf:/bind -w /bind lbx-nerf:latest python run_nerf.py --config config_train.txt
 ```
