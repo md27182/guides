@@ -24,7 +24,6 @@ RUN pip install pipenv
 COPY Pipfile Pipfile
 COPY Pipfile.lock Pipfile.lock
 RUN pipenv install --system
-CMD python3 run_nerf.py --config config_train.txt
 ```
 
 ### Run the code
