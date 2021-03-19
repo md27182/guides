@@ -11,6 +11,9 @@
   ```ChallengeResponseAuthentication no```\
   ```PasswordAuthentication no```\
   ```usePAM no```
+  ```ClientAliveInterval 30```
+  ```ClientAliveCountMax 1000```
+  ```AcceptEnv LANG LC_* <environment variables you want to share>```
 - ```cp <path to id_rsa.pub> ~/.ssh/authorized_keys```
   - If you need to add more authorized keys later, you can add them as new lines in the ```authorized_keys``` file
 - Restart ssh server with ```sudo service ssh restart```
