@@ -5,7 +5,9 @@ Clear out the .venv folder and run
 sudo docker run --gpus all -it --rm -v /home/lightbox/Desktop/lbx-nerf:/tmp -w /tmp lbx-nerf:latest pipenv install
 ```
 
-Note: it's important to update the lock file from inside the docker environment to avoid, for example, building dependencies based on your local python version instead of the one in the docker environment. The reason we couldn't update the lock file during the building of the image is that the updated lock file wouldn't be saved.
+Note: it's important to update the lock file from inside the docker environment to avoid, for example, building dependencies based on your local python version instead of the one in the docker environment. 
+
+Note: the reason we couldn't update the lock file during the building of the image is that the updated lock file wouldn't be saved.
 
 ### Build image using new Pipfile.lock
 Navigate to the lbx-nerf folder and run
