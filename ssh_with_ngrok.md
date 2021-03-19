@@ -10,9 +10,9 @@
   - Set the following, and don't forget to remove the ```#``` if there is one at the start of the line\
   ```ChallengeResponseAuthentication no```\
   ```PasswordAuthentication no```\
-  ```usePAM no```
-  ```ClientAliveInterval 30```
-  ```ClientAliveCountMax 1000```
+  ```usePAM no```\
+  ```ClientAliveInterval 30```\
+  ```ClientAliveCountMax 1000```\
   ```AcceptEnv LANG LC_* <environment variables you want to share>```
 - ```cp <path to id_rsa.pub> ~/.ssh/authorized_keys```
   - If you need to add more authorized keys later, you can add them as new lines in the ```authorized_keys``` file
